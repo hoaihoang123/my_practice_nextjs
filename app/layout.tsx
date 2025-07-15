@@ -1,7 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "MyNext Blog",
@@ -16,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <Header />
-        <main className="flex flex-col">{children}</main>
-        <Footer />
+        <main>{children}</main>
       </body>
     </html>
   );
