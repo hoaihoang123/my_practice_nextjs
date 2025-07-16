@@ -48,15 +48,12 @@ export default function Home() {
   const prev = () => setCurrent((c) => mod(c - 1, slides.length));
   const next = () => setCurrent((c) => mod(c + 1, slides.length));
 
-  // Calculate indices for left, center, right
   const leftIdx = mod(current - 1, slides.length);
   const rightIdx = mod(current + 1, slides.length);
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-slate-50 to-indigo-100 flex flex-col items-center">
-      {/* 3D Card Carousel Slider */}
       <div className="relative w-full h-[400px] md:h-[500px] mt-8 flex items-center justify-center select-none">
-        {/* Slides */}
         <div className="w-full h-full flex items-center justify-center relative">
           {slides.map((slide, idx) => {
             let style =
