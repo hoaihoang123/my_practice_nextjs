@@ -28,7 +28,7 @@ const CategoryTabs = () => {
   }, []);
 
   return (
-    <div className="flex justify-around  items-center space-x-8 mb-6">
+    <div className="flex flex-wrap justify-around  items-center space-x-8 mb-6">
       {categories.map((category) => (
         <button
           key={category.id}
