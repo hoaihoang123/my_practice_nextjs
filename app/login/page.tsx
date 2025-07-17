@@ -90,7 +90,7 @@ const LoginPage = () => {
 
       if (res?.ok) {
         console.log("✅ Login successful, redirecting...");
-        router.push("/taskmanagement/tasks");
+        router.push("/thegioididong/products");
       } else {
         console.log("❌ Login failed:", res?.error);
         if (res?.error === "CredentialsSignin") {

@@ -10,12 +10,10 @@ const handler = NextAuth({
         email: { label: "Email", type: "email" },
         password: { label: "Password", type: "password" },
       },
-      // app/api/auth/[...nextauth].ts
       async authorize(credentials) {
         try {
           console.log("🔑 NextAuth authorize called with:", credentials?.email);
 
-          // Real API call only
           const res = await fetch("https://server.aptech.io/auth/login", {
             method: "POST",
             headers: {
