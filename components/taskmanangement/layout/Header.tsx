@@ -2,9 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { Search, Bell, User, Plus, Menu, Home, LogOut } from "lucide-react";
+import { Bell, User, Plus, Menu, Home, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { signOut, useSession } from "next-auth/react";

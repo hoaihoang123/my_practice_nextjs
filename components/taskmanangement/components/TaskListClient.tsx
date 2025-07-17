@@ -93,12 +93,6 @@ const TaskListClient = ({ initialTasks }: { initialTasks: Task[] }) => {
     TaskFormData | undefined
   >();
 
-  const handleCreateTask = () => {
-    setModalMode("create");
-    setSelectedTask(undefined);
-    setIsModalOpen(true);
-  };
-
   const handleEditTask = (task: Task) => {
     setModalMode("update");
     setSelectedTask({
